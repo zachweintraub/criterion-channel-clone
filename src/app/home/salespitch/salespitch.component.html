@@ -1,2 +1,2 @@
-<app-salespitch-nav [leftOptionClass]="leftOptionClass" [middleOptionClass]="middleOptionClass"[rightOptionClass]="rightOptionClass"></app-salespitch-nav>
-<app-salespitch-display [selectedDisplay]="selectedDisplay"></app-salespitch-display>
+<app-salespitch-nav [leftOptionClass]="leftOptionClass" [middleOptionClass]="middleOptionClass"[rightOptionClass]="rightOptionClass" (selectDisplaySender)="setDisplay($event);"></app-salespitch-nav>
+<app-salespitch-display [selectedDisplay]="selectedDisplay" [leftOptionClass]="leftOptionClass" [middleOptionClass]="middleOptionClass"[rightOptionClass]="rightOptionClass"></app-salespitch-display>

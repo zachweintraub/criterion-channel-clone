@@ -26,8 +26,25 @@
     background-repeat: no-repeat;
 }
 
+#middle {
+    text-align: right;
+    margin-left: 60%;
+    margin-right: 10%;
+}
+
+#right {
+    text-align: right;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 [id^=salespitch-display] {
     height: 600px;
+}
+
+#devices {
+    width: 700px;
+    float: left;
 }
 
 #start-trial {
@@ -46,3 +63,19 @@
     background: grey;
 }
 
+.selected {
+    animation: slide-in 0.3s forwards;
+}
+.muted {
+    animation: slide-out 0.3s forwards;
+    display: none;
+}
+
+@keyframes slide-in {
+    100% { transform: translateX(0%); }
+}
+    
+@keyframes slide-out {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}

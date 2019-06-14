@@ -8,6 +8,9 @@ import { Component, OnInit, Input } from '@angular/core';
 export class SalespitchDisplayComponent implements OnInit {
 
   @Input() selectedDisplay: string;
+  @Input() leftOptionClass: string;
+  @Input() middleOptionClass: string;
+  @Input() rightOptionClass: string;
 
   constructor() { }
 
