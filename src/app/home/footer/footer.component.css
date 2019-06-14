@@ -1,0 +1,17 @@
+#home-footer {
+    width: 100vw;
+    background: black;
+    line-height: 70px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 8pt;
+}
+
+.nav-link {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 1%;
+}

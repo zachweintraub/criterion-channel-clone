@@ -1,27 +1,29 @@
 #home-header {
     width: 100vw;
     background: black;
-    line-height: 100px;
+    line-height: 80px;
 }
 
 a {
     color: white;
     text-decoration: none;
+    font-size: 11pt;
 }
 
 #header-logo {
-    max-height: 42px;
-}
-
-.nav-link {
-    font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    max-height: 50px;
+    vertical-align: middle;
     margin-left: 1%;
 }
 
+.nav-link {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 3%;
+}
+
 .user-link {
-    font-weight: lighter;
+    font-weight: 200;
     float: right;
-    margin-right: 1%;
+    margin-right: 3%;
 }

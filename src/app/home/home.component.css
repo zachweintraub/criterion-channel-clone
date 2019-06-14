@@ -5,9 +5,5 @@ app-header {
 }
 
 app-intro {
-    background-image: url('../../assets/img/virigin-suicides.jpg');
-}
-
-body {
-    width: 100vw;
+    max-height: 620px;
 }
