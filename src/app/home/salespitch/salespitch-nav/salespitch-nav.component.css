@@ -1,0 +1,22 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.icon {
+    height: 50px;
+}
+
+#option-lt, #option-md {
+    border-right: solid rgb(170, 170, 170) 1px;
+}
+
+[id^=option] {
+    text-align: center;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+[id^=option]:hover {
+    opacity: 1;
+}

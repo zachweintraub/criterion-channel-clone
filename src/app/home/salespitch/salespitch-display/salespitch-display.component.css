@@ -1,0 +1,20 @@
+#salespitch-display-lt {
+    background-image: url('../../../../assets/img/eight-and-a-half.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-position-y: -10px;
+    background-repeat: no-repeat;
+}
+
+#salespitch-display-md {
+    background-image: url('../../../../assets/img/three-colors-red.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-position-y: -10px;
+    background-repeat: no-repeat;
+}
+
+[id^=salespitch-display] {
+    height: 600px;
+}
+

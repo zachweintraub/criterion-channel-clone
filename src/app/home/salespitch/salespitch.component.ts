@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SalespitchComponent implements OnInit {
 
+  selectedDisplay: string = 'left';
+
   constructor() { }
 
   ngOnInit() {
