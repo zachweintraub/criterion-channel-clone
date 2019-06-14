@@ -1,4 +1,21 @@
+body {
+    width: 100vw;
+}
+
 a {
     color: white;
     text-decoration: none;
+}
+
+#header-logo {
+    max-height: 42px;
+}
+
+.nav-link {
+    font-weight: bold;
+}
+
+.user-link {
+    font-weight: lighter;
+    text-align: right;
 }
