@@ -11,8 +11,6 @@ export class IntroComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-    console.log(this.bgImg);
-  }
+  ngOnInit() { }
 
 }

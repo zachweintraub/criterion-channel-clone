@@ -1,5 +1,7 @@
-body {
+#home-header {
     width: 100vw;
+    background: black;
+    line-height: 100px;
 }
 
 a {
@@ -13,9 +15,13 @@ a {
 
 .nav-link {
     font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 1%;
 }
 
 .user-link {
     font-weight: lighter;
-    text-align: right;
+    float: right;
+    margin-right: 1%;
 }
