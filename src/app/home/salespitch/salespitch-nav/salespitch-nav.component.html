@@ -1,13 +1,13 @@
 <div class="wrapper">
-  <div id="option-lt">
+  <div id="option-lt" [class]="leftOptionClass" (click)="displayOptionClicked('left')">
     <img class="icon" src="../../../../assets/img/salespitch-icon-lt.png">
     <p>The movies you want</p>
   </div>
-  <div id="option-md">
+  <div id="option-md" [class]="middleOptionClass" (click)="displayOptionClicked('middle')">
     <img class="icon" src="../../../../assets/img/salespitch-icon-md.png">
     <p>Thematically presented</p>
   </div>
-  <div id="option-rt">
+  <div id="option-rt" [class]="rightOptionClass" (click)="displayOptionClicked('right')">
     <img class="icon" src="../../../../assets/img/salespitch-icon-rt.png">
     <p>Download the apps</p>
   </div>

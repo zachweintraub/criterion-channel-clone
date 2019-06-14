@@ -20,3 +20,8 @@
 [id^=option]:hover {
     opacity: 1;
 }
+
+.selected {
+    border-bottom: solid white 10px;
+    opacity: 1;
+}
