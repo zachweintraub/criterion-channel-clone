@@ -1,7 +1,11 @@
 app-header {
     background: black;
     color: white;
-    width: 100%;
+    width: 100vw;
+}
+
+app-intro {
+    background-image: url('../../assets/img/virigin-suicides.jpg');
 }
 
 body {
