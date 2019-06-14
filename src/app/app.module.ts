@@ -12,6 +12,8 @@ import { FooterComponent } from './home/footer/footer.component';
 import { FeaturedSlideshowComponent } from './now-playing/featured-slideshow/featured-slideshow.component';
 import { ContentGridComponent } from './now-playing/content-grid/content-grid.component';
 import { SearchComponent } from './search/search.component';
+import { SalespitchNavComponent } from './home/salespitch/salespitch-nav/salespitch-nav.component';
+import { SalespitchDisplayComponent } from './home/salespitch/salespitch-display/salespitch-display.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { SearchComponent } from './search/search.component';
     FooterComponent,
     FeaturedSlideshowComponent,
     ContentGridComponent,
-    SearchComponent
+    SearchComponent,
+    SalespitchNavComponent,
+    SalespitchDisplayComponent
   ],
   imports: [
     BrowserModule
