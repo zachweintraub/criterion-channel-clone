@@ -14,6 +14,7 @@ import { ContentGridComponent } from './now-playing/content-grid/content-grid.co
 import { SearchComponent } from './search/search.component';
 import { SalespitchNavComponent } from './home/salespitch/salespitch-nav/salespitch-nav.component';
 import { SalespitchDisplayComponent } from './home/salespitch/salespitch-display/salespitch-display.component';
+import { CollectionCarouselComponent } from './now-playing/collection-carousel/collection-carousel.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { SalespitchDisplayComponent } from './home/salespitch/salespitch-display
     ContentGridComponent,
     SearchComponent,
     SalespitchNavComponent,
-    SalespitchDisplayComponent
+    SalespitchDisplayComponent,
+    CollectionCarouselComponent
   ],
   imports: [
     BrowserModule

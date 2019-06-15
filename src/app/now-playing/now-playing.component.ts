@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Content } from '../content.model';
+import { Collection } from '../collection.model';
 
 @Component({
   selector: 'app-now-playing',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./now-playing.component.css']
 })
 export class NowPlayingComponent implements OnInit {
+
+
 
   constructor() { }
 

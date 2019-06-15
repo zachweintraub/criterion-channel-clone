@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ContentGridComponent } from './content-grid.component';
+import { CollectionCarouselComponent } from './collection-carousel.component';
 
-describe('ContentGridComponent', () => {
-  let component: ContentGridComponent;
-  let fixture: ComponentFixture<ContentGridComponent>;
+describe('CollectionCarouselComponent', () => {
+  let component: CollectionCarouselComponent;
+  let fixture: ComponentFixture<CollectionCarouselComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ContentGridComponent ]
+      declarations: [ CollectionCarouselComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ContentGridComponent);
+    fixture = TestBed.createComponent(CollectionCarouselComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

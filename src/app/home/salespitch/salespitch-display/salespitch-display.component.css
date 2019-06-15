@@ -33,18 +33,21 @@
 }
 
 #right {
-    text-align: right;
     margin-left: 10%;
     margin-right: 10%;
+    text-align: right;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 
 [id^=salespitch-display] {
     height: 600px;
 }
 
-#devices {
-    width: 700px;
-    float: left;
+#devices-img {
+    background-image: url('../../../../assets/img/salespitch-display-rt.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #start-trial {
@@ -63,19 +66,6 @@
     background: grey;
 }
 
-.selected {
-    animation: slide-in 0.3s forwards;
-}
 .muted {
-    animation: slide-out 0.3s forwards;
     display: none;
-}
-
-@keyframes slide-in {
-    100% { transform: translateX(0%); }
-}
-    
-@keyframes slide-out {
-    0% { transform: translateX(0%); }
-    100% { transform: translateX(-100%); }
 }
