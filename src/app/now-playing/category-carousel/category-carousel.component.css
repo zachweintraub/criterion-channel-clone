@@ -1,0 +1,21 @@
+.collection-thumb {
+    width: 300px;
+    transition: 300ms;
+}
+
+.collection-thumb:hover {
+    opacity: 0.8;
+}
+
+.category-name {
+    font-weight: 800;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.carousel-item {
+    padding-right: 2%;
+}
