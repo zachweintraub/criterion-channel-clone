@@ -1,6 +1,6 @@
 <p class="category-name">{{thisCategory.name}}</p>
 <div class="wrapper">
-  <div *ngFor="let collection of thisCategory.collections" class="carousel-item">
+  <div *ngFor="let collection of theseCollections | async | category:thisCategoryId" class="carousel-item">
     <img class="collection-thumb" src="../../../assets/img/thumbs/{{collection.thumbnail}}" alt="{{collection.thumbnail}}">
     <p>{{collection.name}}</p>
   </div>
