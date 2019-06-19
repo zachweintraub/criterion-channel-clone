@@ -24,13 +24,15 @@ export class AdminComponent implements OnInit {
     this.categories = this.categoryService.getCategories();
   }
 
-  submitCategory(name) {
+  submitCategory(name: string) {
     let newCategory: Category = new Category(name);
     this.categoryService.addCategory(newCategory);
   }
 
-  submitCollection() {
-
+  submitCollection(name: string, description: string, category: string, thumb: string, featured: boolean) {
+    let newCollection = new Collection(name, description, [category], thumb, featured);
+    console.log(newCollection);
+    this.collectionService.addCollection(newCollection);
   }
 
 }

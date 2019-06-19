@@ -24,7 +24,7 @@
     <label>Category:</label>
     <br>
     <select #newCollectionCategory>
-      <option *ngFor="let category of categories | async" value="category.$key">{{category.name}}</option>
+      <option *ngFor="let category of categories | async" value={{category.$key}}>{{category.name}}</option>
     </select>
   </div>
   <div>
@@ -32,5 +32,9 @@
       <br>
       <input #newCollectionThumb>
     </div>
-  <button (click)="submitCategory(newCategory.value); newCategory.value=''">Add</button>
+    <div>
+      <input #newCollectionFeatured type="checkbox" value="yes" checked>
+      <label>Featured Collection</label>
+    </div>
+  <button (click)="submitCollection(newCollectionName.value, newCollectionDescription.value, newCollectionCategory.value, newCollectionThumb.value, newCollectionFeatured.checked); newCollectionName.value=''; newCollectionDescription.value=''; newCollectionCategory.value=''; newCollectionThumb.value=''; newCollectionFeatured.value='';">Add</button>
 </div>

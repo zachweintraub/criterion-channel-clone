@@ -15,7 +15,7 @@ export class CollectionService {
     return this.collections;
   }
 
-  addCollections(collection: Collection) {
+  addCollection(collection: Collection) {
     this.collections.push(collection);
   }
 
