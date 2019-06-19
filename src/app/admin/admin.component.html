@@ -1,0 +1,36 @@
+<h3>Add New Category to DB</h3>
+<div>
+  <div>
+    <label>Category Name:</label>
+    <br>
+    <input #newCategory>
+  </div>
+  <button (click)="submitCategory(newCategory.value); newCategory.value=''">Add</button>
+</div>
+
+<h3>Add New Collection to DB</h3>
+<div>
+  <div>
+    <label>Collection Name:</label>
+    <br>
+    <input #newCollectionName>
+  </div>
+  <div>
+    <label>Description:</label>
+    <br>
+    <textarea #newCollectionDescription></textarea>
+  </div>
+  <div>
+    <label>Category:</label>
+    <br>
+    <select #newCollectionCategory>
+      <option *ngFor="let category of categories | async" value="category.$key">{{category.name}}</option>
+    </select>
+  </div>
+  <div>
+      <label>Thumbnail:</label>
+      <br>
+      <input #newCollectionThumb>
+    </div>
+  <button (click)="submitCategory(newCategory.value); newCategory.value=''">Add</button>
+</div>

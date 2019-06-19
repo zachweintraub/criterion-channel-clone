@@ -1,0 +1,26 @@
+{
+    "categories" : [{
+        "name": "SAMPLE CATEGORY"
+    }],
+    "collections": [{
+        "name": "Sample Collection",
+        "description": "This is the description of a sample collection.",
+        "categories": [0],
+        "thumbnail": "sample.jpg",
+        "featured": false
+    }],
+    "content": [{
+        "name": "Sample Film",
+        "description": "This is a great film, honestly.",
+        "collections": [0],
+        "details": {
+            "director": "Stanley Kubrick",
+            "year": "1999",
+            "country": "USA",
+            "cast": ["Tom Cruise", "Nicole Kidman"]
+
+        },
+        "thumbnail": "sample.jpg",
+        "primary": true
+    }]
+}

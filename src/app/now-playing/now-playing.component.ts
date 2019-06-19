@@ -2,13 +2,18 @@ import { Component, OnInit } from '@angular/core';
 import { Content } from '../content.model';
 import { Collection } from '../collection.model';
 import { Category } from '../category.model';
+import { FirebaseListObservable } from 'angularfire2/database';
+import { CategoryService } from '../services/category.service';
 
 @Component({
   selector: 'app-now-playing',
   templateUrl: './now-playing.component.html',
-  styleUrls: ['./now-playing.component.css']
+  styleUrls: ['./now-playing.component.css'],
+  providers: [CategoryService]
 })
 export class NowPlayingComponent implements OnInit {
+
+  categories: FirebaseListObservable<any[]>;
 
   jubal: Content = new Content('Jubal', 'A trio of exceptional performances by Glenn Ford, Ernest Borgnine, and Rod Steiger form the center of JUBAL, an overlooked Hollywood treasure from genre master Delmer Daves. In this Shakespearean tale of jealousy and betrayal, Ford is an honorable itinerant cattleman, befriended and hired by Borgnine’s bighearted ranch owner despite his unwillingness to talk about his past. When he becomes the object of the attentions of the owner’s bored wife (Valerie French) and is entrusted with a foreman’s responsibilities, his presence starts to rankle a shifty fellow cowhand, played by Steiger. The resulting emotional showdown imparts unparalleled psychological intensity to this vivid western melodrama, featuring expressive location photography in Technicolor and CinemaScope.', {director: 'Delmer Daves', year: '1956', country: 'United States', cast: ['Glen Ford', 'Ernest Borgnine', 'Valerie French']}, 'jubal.jpg', true);
   weekend: Content = new Content('Weekend', 'This sensual, remarkably observed, beautifully acted wonder is the breakout feature from British writer-director-editor Andrew Haigh. Rarely has a film been as honest about sexuality—in both depiction and discussion—as this tale of a one-night stand that develops into a weekend-long idyll for two very different young men (exciting screen newcomers Tom Cullen and Chris New) in the English Midlands. It’s an emotionally naked film that’s at once an invaluable snapshot of the complexities of contemporary gay living and a universally resonant portrait of a love affair.', {director: 'Andrew Haigh', year: '2011', country: 'United Kingdom', cast: ['Tom Cullen', 'Chris New']}, 'weekend.jpg', true);
@@ -21,15 +26,13 @@ export class NowPlayingComponent implements OnInit {
   directedByNicolasRoegCollection: Collection = new Collection('Directed By Nicolas Roeg', 'This is a collection of films directed by Nicolas Roeg.', [], 'directed-by-nicolas-roeg.jpg', true);
   pagansPolicemenParentsPalazzosCollection: Collection = new Collection('Pagans! Policemen! Parents! Palazzos!', `This is a double feature of The Wicker Man and Don't Look Now`, [], 'pagans-policemen-parents-palazzos.jpg', true);
 
-  recentCollections: Category = new Category('RECENT COLLECTIONS', [this.weekendCollection, this.directedByCarlosReygadasCollection, this.directedByNicolasRoegCollection]);
-  criterionEditions: Category = new Category('CRITERION EDITIONS', [this.friendsHomeCollection, this.jubalCollection]);
-  doubleFeatures: Category = new Category('DOUBLE FEATURES', [this.pagansPolicemenParentsPalazzosCollection]);
+  constructor(private categoryService: CategoryService) {
 
-  masterCategoryList: Category[] = [this.recentCollections, this.criterionEditions, this.doubleFeatures];
-
-  constructor() { }
+  }
 
   ngOnInit() {
+    this.categories = this.categoryService.getCategories();
+    console.log(this.categories);
   }
 
 }
