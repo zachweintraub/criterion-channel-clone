@@ -8,13 +8,15 @@ import { FirebaseListObservable, FirebaseObjectObservable } from 'angularfire2/d
 export class CategoryPipe implements PipeTransform {
 
   transform(input: Collection[], categoryId: string) {
-    let output: Collection[] = [];
-    for(let i = 0; i < input.length; i++) {
-      if(input[i].category.includes(categoryId)) {
-        output.push(input[i]);
+    if(input) {
+      let output: Collection[] = [];
+      for(let i = 0; i < input.length; i++) {
+        if(input[i].category.includes(categoryId)) {
+          output.push(input[i]);
+        }
       }
+      return output;
     }
-    return output;
   }
 
 }
