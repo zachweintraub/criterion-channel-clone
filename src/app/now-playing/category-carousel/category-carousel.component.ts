@@ -16,26 +16,20 @@ export class CategoryCarouselComponent implements OnInit {
   @Input() thisCategoryId: string;
 
   theseCollections: FirebaseListObservable<any[]>;
+  hoverCollection: string = '';
 
-  constructor(private collectionService: CollectionService) {
-    // this.theseCollections = [];
+  setHoverCollection(string) {
+    this.hoverCollection = string;
   }
+
+  clearHoverCollection() {
+    this.hoverCollection = null;
+  }
+
+  constructor(private collectionService: CollectionService) {}
 
   ngOnInit() {
     this.theseCollections = this.collectionService.getCollections();
-
-    // let observable = this.collectionService.getCollections();
-    // let temp = [];
-    // observable.subscribe(collectionData => {
-    //   for(let object of collectionData) {
-    //     this.theseCollections.push(object);
-    //   }
-    // });
-    // for(let collection of temp) {
-    //   let newCollection: Collection = new Collection(collection.name, collection.description, collection.category, collection.thumbnail, collection.featured);
-    //   this.theseCollections.push(newCollection);
-    // }
-    // console.log(this.theseCollections);
   }
 
 }

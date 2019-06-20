@@ -1,3 +1,7 @@
-<p>
-  featured-slideshow works!
-</p>
+<div class="featured-collection-container" *ngFor="let collection of featuredCollections | async | featured">
+  <img class="featured-collection-img" src="../../../assets/img/thumbs/{{collection.thumbnail}}" alt="{{collection.thumbnail}}">
+  <div class="featured-collection-info">
+    <h1 class="featured-collection-title">{{collection.name}}</h1>
+    <p class="featured-collection-description">{{collection.description}}</p>
+  </div>
+</div>

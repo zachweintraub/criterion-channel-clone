@@ -18,6 +18,7 @@ import { SalespitchDisplayComponent } from './home/salespitch/salespitch-display
 import { CategoryCarouselComponent } from './now-playing/category-carousel/category-carousel.component';
 import { AdminComponent } from './admin/admin.component';
 import { CategoryPipe } from './category.pipe';
+import { FeaturedPipe } from './featured.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -41,7 +42,8 @@ export const firebaseConfig = {
     SalespitchDisplayComponent,
     CategoryCarouselComponent,
     AdminComponent,
-    CategoryPipe
+    CategoryPipe,
+    FeaturedPipe
   ],
   imports: [
     BrowserModule,

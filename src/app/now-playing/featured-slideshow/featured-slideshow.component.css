@@ -1,0 +1,5 @@
+.featured-collection-img {
+    max-width: 1720px;
+    justify-self: end;
+    z-index: -1;
+}
