@@ -1,8 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Collection } from '../../collection.model';
 import { Category } from '../../category.model';
 import { CollectionService } from '../../services/collection.service';
-import { FirebaseListObservable, FirebaseObjectObservable } from 'angularfire2/database';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-category-carousel',
@@ -17,6 +16,7 @@ export class CategoryCarouselComponent implements OnInit {
 
   theseCollections: FirebaseListObservable<any[]>;
   hoverCollection: string = '';
+  currentIndex: Object;
 
   setHoverCollection(string) {
     this.hoverCollection = string;
