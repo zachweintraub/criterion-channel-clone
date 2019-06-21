@@ -25,7 +25,7 @@ export class FeaturedSlideshowComponent implements OnInit {
   ngOnInit() {
     this.featuredCollections = this.collectionService.getCollections();
     this.currentSlide = 'slide0';
-    setTimeout(()=>{this.selectSlide('0')},400);
+    setTimeout(()=>{this.selectSlide('0')},1000);
   }
   
 }
