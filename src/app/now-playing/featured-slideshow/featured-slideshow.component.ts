@@ -12,14 +12,20 @@ export class FeaturedSlideshowComponent implements OnInit {
 
   featuredCollections: FirebaseListObservable<any[]>;
 
+  currentSlide: string;
+
+  selectSlide(id: string) {
+    document.querySelector(`#${this.currentSlide}`).classList.remove('current');
+    this.currentSlide = 'slide' + id;
+    document.querySelector(`#${this.currentSlide}`).classList.add('current');
+  }
+
   constructor(private collectionService: CollectionService) { }
 
   ngOnInit() {
     this.featuredCollections = this.collectionService.getCollections();
+    this.currentSlide = 'slide0';
+    setTimeout(()=>{this.selectSlide('0')},400);
   }
-
-  registerCheck(i: number) {
-    console.log(i);
-  }
-
+  
 }

@@ -7,6 +7,6 @@
     </div>
   </div>
   <div class="featured-buttons">
-    <input *ngFor="let collection of featuredCollections | async | featured; let i = index;" type="radio" name="featured-buttons" id="{{'button'+i}}">
+    <input *ngFor="let collection of featuredCollections | async | featured; let i = index;" type="radio" name="featured-buttons" id="{{i}}" (click)="selectSlide($event.target.id);">
   </div>
 </div>

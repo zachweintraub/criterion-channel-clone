@@ -4,6 +4,7 @@
     width: 100%;
     overflow: hidden;
     padding: 2%;
+    align-items: center;
 }
 
 .featured-collection-slide {
@@ -11,12 +12,8 @@
     display: none;
 }
 
-#slide0 {
+.current {
     display: block;
-}
-
-#button0 {
-    
 }
 
 .featured-collection-img {
@@ -39,5 +36,7 @@
 
 .featured-buttons {
     position: relative;
-    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
 }
