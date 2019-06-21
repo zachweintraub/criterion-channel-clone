@@ -1,5 +1,43 @@
+.featured-collection-container {
+    /* position: absolute; */
+    display: inline;
+    width: 100%;
+    overflow: hidden;
+    padding: 2%;
+}
+
+.featured-collection-slide {
+    overflow: hidden;
+    display: none;
+}
+
+#slide0 {
+    display: block;
+}
+
+#button0 {
+    
+}
+
 .featured-collection-img {
-    max-width: 1720px;
-    justify-self: end;
+    position: relative;
+    float: right;
     z-index: -1;
+    width: 60%;
+}
+
+.featured-collection-info {
+    position: relative;
+    left: 0;
+    top: 100px;
+    width: 40%;
+}
+
+.featured-collection-title {
+    font-weight: 500;
+}
+
+.featured-buttons {
+    position: relative;
+    justify-items: center;
 }

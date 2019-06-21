@@ -18,4 +18,21 @@
 
 .carousel-item {
     padding-right: 2%;
+    position: relative;
+}
+
+.hover-info {
+    color: black;
+    background: white;
+    border-radius: 5px;
+    z-index: 1;
+    padding: 5px;
+    position: absolute;
+    top: 0px;
+    left: 90%;
+    width: 100%;
+}
+
+.hover-info-title {
+    font-weight: 500;
 }

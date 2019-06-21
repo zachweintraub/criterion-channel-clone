@@ -19,6 +19,7 @@ import { CategoryCarouselComponent } from './now-playing/category-carousel/categ
 import { AdminComponent } from './admin/admin.component';
 import { CategoryPipe } from './category.pipe';
 import { FeaturedPipe } from './featured.pipe';
+import { ShortDescriptionPipe } from './short-description.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -43,7 +44,8 @@ export const firebaseConfig = {
     CategoryCarouselComponent,
     AdminComponent,
     CategoryPipe,
-    FeaturedPipe
+    FeaturedPipe,
+    ShortDescriptionPipe
   ],
   imports: [
     BrowserModule,

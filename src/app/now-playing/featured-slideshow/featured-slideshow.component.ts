@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Collection } from '../../collection.model';
 import { CollectionService } from '../../services/collection.service';
 import { FirebaseListObservable } from 'angularfire2/database';
 
@@ -17,6 +16,10 @@ export class FeaturedSlideshowComponent implements OnInit {
 
   ngOnInit() {
     this.featuredCollections = this.collectionService.getCollections();
+  }
+
+  registerCheck(i: number) {
+    console.log(i);
   }
 
 }

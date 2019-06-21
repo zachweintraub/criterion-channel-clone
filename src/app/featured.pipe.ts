@@ -11,9 +11,9 @@ export class FeaturedPipe implements PipeTransform {
     if(input) {
       for(let i = 0; i < input.length; i++) {
         if(input[i].featured) {
-          if(output.length < 1) {
+          //if(output.length < 1) {
             output.push(input[i]);
-          }
+          //}
         }
       }
     }

@@ -1,7 +1,12 @@
-<div class="featured-collection-container" *ngFor="let collection of featuredCollections | async | featured">
-  <img class="featured-collection-img" src="../../../assets/img/thumbs/{{collection.thumbnail}}" alt="{{collection.thumbnail}}">
-  <div class="featured-collection-info">
-    <h1 class="featured-collection-title">{{collection.name}}</h1>
-    <p class="featured-collection-description">{{collection.description}}</p>
+<div class="featured-collection-container">
+  <div class="featured-collection-slide" *ngFor="let collection of featuredCollections | async | featured; let i = index;" id="{{'slide' + i}}">
+    <img class="featured-collection-img" src="../../../assets/img/thumbs/{{collection.thumbnail}}" alt="{{collection.thumbnail}}">
+    <div class="featured-collection-info">
+      <h1 class="featured-collection-title">{{collection.name}}</h1>
+      <p class="featured-collection-description">{{collection.description | shortDescription}}</p>
+    </div>
+  </div>
+  <div class="featured-buttons">
+    <input *ngFor="let collection of featuredCollections | async | featured; let i = index;" type="radio" name="featured-buttons" id="{{'button'+i}}">
   </div>
 </div>

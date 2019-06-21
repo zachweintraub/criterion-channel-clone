@@ -3,8 +3,9 @@
   <div *ngFor="let collection of theseCollections | async | category:thisCategoryId" class="carousel-item" (mouseenter)="setHoverCollection(collection.$key)" (mouseleave)="clearHoverCollection()">
     <img class="collection-thumb" src="../../../assets/img/thumbs/{{collection.thumbnail}}" alt="{{collection.thumbnail}}">
     <p>{{collection.name}}</p>
-    <div *ngIf="hoverCollection === collection.$key">
-        <p>{{collection.description}}</p>
-      </div>
+    <div class="hover-info" *ngIf="hoverCollection === collection.$key">
+      <p class="hover-info-title">{{collection.name}}</p>  
+      <p class="hover-info-description">{{collection.description | shortDescription}}</p>
+    </div>
   </div>
 </div>
