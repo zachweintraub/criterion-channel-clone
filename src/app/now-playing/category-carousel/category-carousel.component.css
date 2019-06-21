@@ -36,3 +36,7 @@
 .hover-info-title {
     font-weight: 500;
 }
+
+.hover-pos-3, .hover-pos-2 {
+    left: -100%;
+}

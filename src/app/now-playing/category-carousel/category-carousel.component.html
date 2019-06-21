@@ -1,9 +1,9 @@
 <p class="category-name">{{thisCategory.name}}</p>
 <div class="wrapper">
-  <div *ngFor="let collection of theseCollections | async | category:thisCategoryId:currentIndex;" class="carousel-item" (mouseenter)="setHoverCollection(collection.$key)" (mouseleave)="clearHoverCollection()">
+  <div *ngFor="let collection of theseCollections | async | category:thisCategoryId:currentIndex; let i = index;" class="carousel-item" (mouseenter)="setHoverCollection(collection.$key)" (mouseleave)="clearHoverCollection()">
     <img class="collection-thumb" src="../../../assets/img/thumbs/{{collection.thumbnail}}" alt="{{collection.thumbnail}}">
     <p>{{collection.name}}</p>
-    <div class="hover-info" *ngIf="hoverCollection === collection.$key">
+    <div class="hover-info hover-pos-{{i}}" *ngIf="hoverCollection === collection.$key">
       <p class="hover-info-title">{{collection.name}}</p>  
       <p class="hover-info-description">{{collection.description | shortDescription}}</p>
     </div>
