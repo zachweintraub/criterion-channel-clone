@@ -30,5 +30,4 @@ export class FeaturedSlideshowComponent implements OnInit {
       document.getElementsByTagName('input')[0].setAttribute('checked', 'true');
     },1000);
   }
-  
 }
