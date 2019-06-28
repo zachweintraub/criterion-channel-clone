@@ -1,27 +1,42 @@
-# CriterionChannel
+# Criterion Channel Clone
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+#### A clone-in-progress of the [Criterion Channel](https://www.criterionchannel.com) website.
+
+#### By **Zach Weintraub**
+
+## Description
+
+This project can be viewed [here](https://criterion-channel-clone.firebaseapp.com/).
+
+This is a clone of the Criterion Channel website, a proprietary streaming platform by the Criterion Collection film distribution company. The purpose of this project is to practice building and styling to existing specifications using Angular2 and Firebase.
+
+## Setup/Installation Requirements
+You will need Node Package Manager and Angular CLI installed.
+
+First, clone this repository. Run `npm install` to install dependencies.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
+## ToDo
+* Update "Now Playing" page with left and right scroll navigation buttons on the "featured" carousel, as well as the smaller carousels for individual collections.
+* Build additional pages (search, "show" pages for viewing individual collections).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Technologies Used
+* Angular2, Firebase (RTDB and hosting), ES6, Node.js, TypeScript, CSS
 
-## Running end-to-end tests
+## Support and contact details
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+_Email me with any questions, comments, or concerns:_
+zachweintraub@gmail.com
 
-## Further help
+### License
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+*{This software is licensed under the MIT license}*
+
+Copyright (c) 2019 **_{Zach Weintraub}_**
